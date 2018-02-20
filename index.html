@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+    
+    <script type="text/javascript" src="js/lib/jquery-ajax.min.js"></script>
+    <script type="text/javascript" src="js/game/Server.js"></script>
+    <script type="text/javascript" src="js/game/Utils.js"></script>
+    <script type="text/javascript" src="js/game/Color.js"></script>
+    <script type="text/javascript" src="js/game/AudioManager.js"></script>
+    <script type="text/javascript" src="js/game/InputManager.js"></script>
+    
+    <script type="text/javascript" src="js/game/Forms.js"></script>
+    <script type="text/javascript" src="js/game/UIManager.js"></script>
+    
+    <script type="text/javascript" src="js/game/GraphicsManager.js"></script>
+    <script type="text/javascript" src="js/game/BackgroundManager.js"></script>
+    <script type="text/javascript" src="js/game/Game.js"></script>
+    <script type="text/javascript" src="js/game/EasterEggs.js"></script>
+</head>
+<body style="position: fixed;">
+    <div id="popupContainer"></div>
+    <div class="fixed-button top right" id="scoreboardButton">
+        <a href="/u16187/helicopter/scoreboard.html" >Ir às pontuações</a>
+    </div>
+    <div id="submitModal" class="modal-container hideable hidden">
+        <div class="modal">
+            <div class="title">Envie sua pontuação!</div>
+            <div class="body">
+                <form id="submitForm" 
+                      data-target="submitModal"
+                      data-success-callback="submitScore"
+                      data-close-code="ok"
+                      class="form close-success" 
+                      method="post" 
+                      action="server/submitscore.php">
+                    <div class="form-group">
+                        <label for="nickname">Nickname</label>
+                        <input type="text" name="nickname" id="nickname" 
+                               maxlength="20" 
+                               placeholder="Um nickname legal :D">
+                    </div>
+                    <div class="form-group">
+                        <input type="button" class='close cancel' value="Cancelar" data-target="submitModal">
+                        <input type="submit" value="Enviar!" data-target="submitModal">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

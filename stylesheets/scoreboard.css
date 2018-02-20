@@ -1,0 +1,53 @@
+#table table {
+    width: 100%;
+    
+    border: solid 3px black;
+    border-collapse: collapse;
+    background-color: white;
+    color: black;
+}
+
+#table td, #table th {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+    color: inherit;
+}
+
+#table tr td:first-child, #table tr th:first-child {
+    padding-left: 50px;
+}
+
+#table tr td:last-child, #table tr th:last-child {
+    padding-right: 50px;
+}
+
+#table thead tr {
+    background-color: #ff5252;
+    color: #620b0b;
+}
+
+#table tbody img {
+    display: block;
+    height: 100%;
+    width: auto;
+    
+    margin: 0 auto;
+}
+
+#table tbody tr.first {
+/*    background-color: #ffba00;*/
+}
+
+#table tbody tr.second {
+/*    background-color: #c0c0c0;*/
+}
+
+#table tbody tr.third {
+/*    background-color: #ff8000;*/
+}
+
+
+#table tbody tr {
+    border: solid 2px black;
+}
