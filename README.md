@@ -1,5 +1,5 @@
 # Helicopter
 
 ## Afazeres
-[ ] Easteregg do Mario
-[ ] Loader
+- [ ] Easteregg do Mario
+- [ ] Loader
